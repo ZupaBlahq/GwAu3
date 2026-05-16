@@ -213,6 +213,11 @@ EndFunc
 
 ; Skill ID: 1508 - $GC_I_SKILL_ID_EXTEND_ENCHANTMENTS
 Func CanUse_ExtendEnchantments()
+	If UAI_PlayerHasEffect($GC_I_SKILL_ID_EXTEND_ENCHANTMENTS) Then Return False
+	; Only useful to boost VoS — skip if VoS not in bar or already active
+	Local $l_i_VoSSlot = Skill_GetSlotByID($GC_I_SKILL_ID_VOW_OF_STRENGTH)
+	If $l_i_VoSSlot = 0 Then Return False
+	If UAI_PlayerHasEffect($GC_I_SKILL_ID_VOW_OF_STRENGTH) Then Return False
 	Return True
 EndFunc
 
