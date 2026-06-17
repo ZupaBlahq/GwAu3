@@ -1799,7 +1799,7 @@ $g_as_MapLabels[882] = "Tunnels of the Forsaken Level 3"
 #EndRegion MapLabels
 
 ; [MapID, "Map Name", CampaignID, "Campaign", ContinentID, "Continent", RegionID, "Region", TypeID, "Type"]
-Global $g_a2D_MapArray[876][10] = [ _
+Global $g_a2D_MapArray[882][10] = [ _
 	[1, "Gladiators Arena", 0, "Core", 3, "Battle Isles", 1, "Maguuma Jungle", 1, "Arena"], _
 	[2, "DEV Test Arena1v1", 0, "Core", 3, "Battle Isles", 1, "Maguuma Jungle", 1, "Arena"], _
 	[3, "Test Map", 0, "Core", 3, "Battle Isles", 0, "Kryta", 2, "Explorable Zone"], _
@@ -2578,12 +2578,12 @@ Global $g_a2D_MapArray[876][10] = [ _
 	[776, "Unknown", 0, "Core", 0, "Tyria", 0, "Kryta", 2, "Explorable Zone"], _
 	[777, "Unknown", 5, "Bonus Mission Pack", 4, "Elona", 22, "The Battle Of Jahai", 14, "Mission Area"], _
 	[778, "Unknown", 5, "Bonus Mission Pack", 0, "Tyria", 23, "The Flight North", 14, "Mission Area"], _
-	[779, "Pre-Searing: Piken Square", 1, "Prophecies", 1 "Eden", 7, "Pre-Searing Ascalon", 10, "Outpost"]
-	[780, "Forsaken Tunnels Level 1", 0, "Core", 1 "Eden", 18, "Depths Of Tyria", 18, "Dungeon"]
+	[779, "Pre-Searing: Piken Square", 1, "Prophecies", 1, "Eden", 7, "Pre-Searing Ascalon", 10, "Outpost"], _
+	[780, "Forsaken Tunnels Level 1", 0, "Core", 1, "Eden", 18, "Depths Of Tyria", 18, "Dungeon"], _
 	[781, "Secret Lairofthe Snowmen Lvl1", 0, "Core", 0, "Tyria", 18, "Depths Of Tyria", 2, "Explorable Zone"], _
 	[782, "Secret Lairofthe Snowmen Lvl2", 0, "Core", 0, "Tyria", 18, "Depths Of Tyria", 2, "Explorable Zone"], _
 	[783, "Droknars Forge", 1, "Prophecies", 0, "Tyria", 3, "Northern Shiverpeaks", 2, "Explorable Zone"], _
-	[784, "Isleofthe Nameless", 0, "Core", 3, "Battle Isles", 21, "Battle Islands", 11, "Zaishen Battle"], _
+	[784, "Isle Of The Nameless", 0, "Core", 3, "Battle Isles", 21, "Battle Islands", 11, "Zaishen Battle"], _
 	[785, "Unknown", 0, "Core", 3, "Battle Isles", 10, "Jade Sea", 16, "Hero Battle Area"], _
 	[786, "Unknown", 0, "Core", 3, "Battle Isles", 8, "Kaineng City", 3, "Guild Battle Area"], _
 	[787, "Unknown", 0, "Core", 3, "Battle Isles", 4, "Heroes Ascent", 3, "Guild Battle Area"], _
@@ -2676,10 +2676,10 @@ Global $g_a2D_MapArray[876][10] = [ _
 	[874, "The Final Confrontation", 2, "Factions", 2, "Cantha", 11, "Shing Jea Island", 2, "Explorable Zone"], _
 	[875, "Lakeside County 1070AE", 0, "Core", 0, "Tyria", 26, "SWAT", 2, "Explorable Zone"], _
 	[876, "Ashford Catacombs 1070AE", 0, "Core", 0, "Tyria", 26, "SWAT", 2, "Explorable Zone"], _
-	[877, "Forsaken Tunnels Level 2", 0, "Core", 1 "Eden", 18, "Depths Of Tyria", 18, "Dungeon"], _
-	[878, "Forsaken Tunnels Level 3", 0, "Core", 1 "Eden", 18, "Depths Of Tyria", 18, "Dungeon"], _
-	[879, "Unkown Reforged Map", 0, "", 0 "", 0, "", 0, ""], _
-	[880, "Tunnels of the Forsaken Level 1", 0, "Core" 0, "Tyria", 18, "Depths Of Tyria", 18, "Dungeon"], _
-	[881, "Tunnels of the Forsaken Level 1", 0, "Core" 0, "Tyria", 18, "Depths Of Tyria", 18, "Dungeon"], _
-	[882, "Tunnels of the Forsaken Level 1", 0, "Core" 0, "Tyria", 18, "Depths Of Tyria", 18, "Dungeon"] _
+	[877, "Forsaken Tunnels Level 2", 0, "Core", 1, "Eden", 18, "Depths Of Tyria", 18, "Dungeon"], _
+	[878, "Forsaken Tunnels Level 3", 0, "Core", 1, "Eden", 18, "Depths Of Tyria", 18, "Dungeon"], _
+	[879, "Unkown Reforged Map", 0, "", 0, "", 0, "", 0, ""], _
+	[880, "Tunnels of the Forsaken Level 1", 0, "Core", 0, "Tyria", 18, "Depths Of Tyria", 18, "Dungeon"], _
+	[881, "Tunnels of the Forsaken Level 1", 0, "Core", 0, "Tyria", 18, "Depths Of Tyria", 18, "Dungeon"], _
+	[882, "Tunnels of the Forsaken Level 1", 0, "Core", 0, "Tyria", 18, "Depths Of Tyria", 18, "Dungeon"] _
 ]
