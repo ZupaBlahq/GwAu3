@@ -1,15 +1,16 @@
 #include-once
 
 Func UAI_Fight($a_f_x, $a_f_y, $a_f_AggroRange = 1320, $a_f_MaxDistanceToXY = 3500, _
-	$a_i_FightMode = $g_i_FinisherMode, $a_b_UseSwitchSet = False, _
+	$a_i_FightMode = $g_i_FinisherMode, $a_b_SwitchWeaponSets = False, _
 	$a_v_PlayerNumber = 0, $a_b_KillOnly = False, _
 	$a_s_ExitCallback = "", $a_i_CallTargetMode = $GC_UAI_TARGET_MODE_CALL)
 	
 	$g_i_BestTarget = 0
 	$g_i_ForceTarget = 0
+	$g_i_AttackTarget = 0
 	$g_i_LastCalledTarget = 0
 	$g_i_FightMode = $a_i_FightMode
-	$g_b_CacheWeaponSet = $a_b_UseSwitchSet
+	$g_b_CacheWeaponSet = $a_b_SwitchWeaponSets
 	$g_i_TargetMode = $a_i_CallTargetMode
 	$g_v_AvoidPlayerNumbers = -1
 

@@ -71,14 +71,14 @@ UAI_UseSkills($x, $y, $aggroRange, $maxDistance)
 | `$a_v_PlayerNumber`    | `0`                        | Priority target (positive) or target to avoid (negative). Accepts a single value or an array.          |
 | `$a_b_KillOnly`        | `False`                    | If `True` and a priority target is set, exits if that target is not found or already dead              |
 | `$a_s_ExitCallback`    | `""`                       | Name of a callback function (string) called each iteration — exits the fight loop if it returns `True` |
-| `$a_i_CallTargetMode`  | `$GC_UAI_CALLTARGET_CALL`  | `$GC_UAI_CALLTARGET_CALL` (default) or `$GC_UAI_CALLTARGET_FOLLOW` (see below)                        |
+| `$a_i_CallTargetMode`  | `$GC_UAI_TARGET_MODE_CALL`  | `$GC_UAI_TARGET_MODE_CALL` (default) or `$GC_UAI_TARGET_MODE_FOLLOW` (see below)                        |
 
 ### Call Target Modes
 
 | Constant                    | Value | Description                                                                                                                       |
 | --------------------------- | ----- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `$GC_UAI_CALLTARGET_CALL`   | 0     | Bot picks its own target and calls it to party via `Agent_CallTarget` (default)                                                   |
-| `$GC_UAI_CALLTARGET_FOLLOW` | 1     | Bot follows the called target of the first non-self party player (`CalledTargetID`) — overrides `$g_i_ForceTarget` each iteration, does not call |
+| `$GC_UAI_TARGET_MODE_CALL`   | 0     | Bot picks its own target and calls it to party via `Agent_CallTarget` (default)                                                   |
+| `$GC_UAI_TARGET_MODE_FOLLOW` | 1     | Bot follows the called target of the first non-self party player (`CalledTargetID`) — overrides `$g_i_ForceTarget` each iteration, does not call |
 
 ### Combat Modes
 
@@ -336,7 +336,7 @@ Global $g_a_VisEffectsCache[1][1][1]      ; 3D array [AgentIndex][VisEffectIndex
 Func UAI_Fight($a_f_X, $a_f_Y, $a_f_AggroRange = 1320, $a_f_MaxDistanceToXY = 3500, _
                $a_i_FightMode = $g_i_FinisherMode, $a_b_UseSwitchSet = False, _
                $a_v_PlayerNumber = 0, $a_b_KillOnly = False, $a_s_ExitCallback = "", _
-               $a_i_CallTargetMode = $GC_UAI_CALLTARGET_CALL)
+               $a_i_CallTargetMode = $GC_UAI_TARGET_MODE_CALL)
 ```
 
 **Parameters:**
@@ -349,7 +349,7 @@ Func UAI_Fight($a_f_X, $a_f_Y, $a_f_AggroRange = 1320, $a_f_MaxDistanceToXY = 35
 - `$a_v_PlayerNumber` : Priority target (positive) or target to avoid (negative); single value or array
 - `$a_b_KillOnly` : If `True` and a priority target is set, exits when that target dies or is not found
 - `$a_s_ExitCallback` : Name of a callback function (string) — exits the loop if it returns `True`
-- `$a_i_CallTargetMode` : `$GC_UAI_CALLTARGET_CALL` (default), `$GC_UAI_CALLTARGET_NONE`, or `$GC_UAI_CALLTARGET_FOLLOW`
+- `$a_i_CallTargetMode` : `$GC_UAI_TARGET_MODE_CALL` (default), `$GC_UAI_CALLTARGET_NONE`, or `$GC_UAI_TARGET_MODE_FOLLOW`
 
 **Operation:**
 
