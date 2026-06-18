@@ -117,7 +117,7 @@ Func Core_Initialize($a_s_GW, $a_b_ChangeTitle = True)
 	Scanner_AddPattern('Render', 'F6C401741C68', -0x68, 'Hook')
 	Scanner_AddPattern('LoadFinished', '2BD9C1E303', 0xA0, 'Hook')
 	Scanner_AddPattern('Trader', '8D4DFC51576A5650', -0x3C, 'Hook')
-	Scanner_AddPattern('TradePartner', '6A008D45F8C745F801000000', -0xC, 'Hook')
+	Scanner_AddPattern('TradePartner', '6A008D45F8C745F80100000050686501000089', -0xC, 'Hook')
 	; EncString Decoding
 	Scanner_AddPattern('ValidateAsyncDecodeStr', "P:\Code\Engine\Text\TextApi.cpp", "codedString", 'Func')
 	If IsDeclared("g_b_AddPattern") Then Extend_AddPattern()
